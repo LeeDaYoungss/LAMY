@@ -31,7 +31,7 @@ header {
   margin:0 auto;
 }
 
-.top-menu {
+.top_menu {
   position:relative;
   width: 100%;
   height:90px;
@@ -87,31 +87,44 @@ input {
   right:0;
   font-size: 20px;
   background: none;
-  color:#333;
+  color:var(--basic-gray-color);
   border: none;
 }
 
-.menu-icon {
+.menu_icon {
   display: flex;
 }
-.menu-icon li a i {
+.menu_icon li a i {
   font-size: 20px;
   color:var(--basic-gray-color);
 }
-.menu-icon li:first-child { padding-right:15px;}
+.menu_icon li:first-child { padding-right:15px;}
 
 
+.menubar_wrap {
+	background:linear-gradient(white 50px, rgba(255,255,255,0.5) 50px, rgba(255,255,255,0.5) );
+	transition:height 0.5s;
+	overflow:hidden
+}
 .menubar {
-  display: inline-block;
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
+  margin:0 auto;
 }
 .menu > li > a {
   font-size: 16px;
-  margin:20px;
   display: block;
 }
-.sub-menu {
+.menu > li {
+  float:left;
+  line-height:50px;
+  margin-right:40px;
+  position: relative;
+}
+.sub_menu {
   position:absolute;
-  display: none;
+  width:100%;
+}
+.sub_menu li {
+  white-space: nowrap;
 }
