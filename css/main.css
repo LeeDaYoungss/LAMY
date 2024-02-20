@@ -33,7 +33,7 @@ header {
   box-sizing: border-box;
   border-bottom: 1px solid #e1e1e1; 
 }
-.menu-wrapper, .menubar .menubar-wrapper {
+.container {
   width: 1200px;
 }
 .logo a{
@@ -57,9 +57,6 @@ input {
 }
 .top_search fieldset {
   border:0 none;
-}
-.top_search legend {
-  display:none;
 }
 .top_search_cont {
   position:relative;
