@@ -1,0 +1,33 @@
+
+@charset 'utf-8';
+@import url(reset.css);
+
+header{
+  background:#f6f5ef;
+  padding: 15px 0;
+  box-shadow:0 3px 3px rgba(0,0,0,.1);
+}
+.container{
+  width: 1320px;
+  margin:0 auto;
+}
+header > div{
+  display: flex;
+  justify-content:space-between;
+}
+header ul{
+  display: flex;
+  gap:20px;
+}
+.top_menu{
+  justify-content: flex-end;
+  margin-bottom:20px;
+  font-size: 14px;
+}
+.logo a{
+  width: 75px;
+  height: 75px;
+  background: url('../images/logo.png') no-repeat;
+  display: block;
+  text-indent: -9999em;
+}
