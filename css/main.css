@@ -1,2 +1,223 @@
 @import url('common.css');
 
+.mainslide{
+	width: 1200px;
+  margin:3em auto;  
+  overflow:hidden;
+}
+.slidewrapper{
+  width: 750px;
+  margin:0 auto;
+  height: 400px;
+  position: relative;
+}
+.slidecontainer{
+  position: relative; 
+  display: flex;
+  left:0;
+  gap:50px;
+}
+.slidecontainer.animated{
+  transition:left 0.3s;
+}
+.slide {
+  width: 100%;
+  height: 378px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;  
+  text-transform: uppercase;
+
+}
+
+.slidecontainer .banner1 {background-image: url(../images/MainBanner1.png);}
+
+.slidecontainer .banner2 {background-image: url(../images/MainBanner1.png);}
+
+.slidecontainer .banner3 {background-image: url(../images/MainBanner1.png);}
+
+.slidecontainer .banner4 {background-image: url(../images/MainBanner1.png);}
+
+.slidecontainer .banner5 {background-image: url(../images/MainBanner1.png);}
+
+.slidecontainer .banner6 {background-image: url(../images/MainBanner1.png);}
+
+.slide.active{
+  opacity: 1;
+}
+
+.slidewrapper button{
+  background: #000;
+  color: var(--basic-white-color);
+  padding: 5px 8px;
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  font-size: 2em;
+}
+.slidewrapper .prev{
+  left: 50px;
+}
+.slidewrapper .next{
+  right: 50px;
+}
+
+@media (max-width:700px){
+	.container {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	.slide_wrapper{
+		width:100%;
+	}
+}
+
+/* PRICE */
+.item_title {
+  font-size: 18px;
+}
+.price1 {
+  font-size: 14px;
+  color:#a7a7a7;
+}
+
+/* BEST ITEM */
+
+.best_item {
+	margin-bottom: 50px;
+}
+.best_item li a img {
+	width: 200px;
+	height: 220px;
+}
+
+/* TIME SALE */
+
+.timeSale_wrapper {
+	background: #FFE4AD;
+  padding:50px 0;
+  box-sizing: border-box;
+}
+.timeSale_wrapper .sale_item {
+	justify-content: end;
+	gap:50px;
+}
+.timeSale_wrapper > .container {
+  
+}
+.sale_title {
+  position:relative;
+  color:var(--basic-gray-color);
+  padding-left:50px;
+}
+.sale_title::before {
+  background:url('../images/time-sale-icon.svg') no-repeat;
+  content: '';
+  position:absolute;
+  width:44px;
+  height:44px;
+  top:0;
+  left:0;
+}
+.sale_price {
+  font-family: 'Pretendard-Regular light';
+  padding: 20px 0 117px;
+    color: #ff3131;
+    font-size: 32px;
+    line-height: 33px;
+    text-align: center;
+    font-weight: 100;
+}
+.sale_price strong {
+  font-weight: 800;
+}
+.timer {
+  text-align: center;
+  color:var(--basic-gray-color);
+}
+.text-warning {
+  font-size: 30px;
+}
+
+
+/* NEW ITEM */
+
+.tab_wrapper { 
+	width:1200px;
+	margin:0 auto;
+}
+.nav {
+	position: relative;
+	width: 100%;
+}
+.tab_menu {
+	position: relative;
+	z-index:1;
+	display:flex;
+	gap:20px;
+  justify-content: center;
+  margin-bottom:50px;
+}
+.tab_menu li {
+	list-style:none; 
+	
+}
+.tab_menu li a{ 
+	color:#999; 
+	text-transform:uppercase; 
+	font-weight:bold;
+	line-height:35px; 
+	text-decoration:none; 
+	padding:0 20px; 
+	display: block;
+  border: 1px solid #333;
+  border-radius: 50px;
+}
+.tab_menu li a.active{
+	color: #fff;
+	background:#333;
+}
+
+#tab_content {
+	min-height: 300px;
+}
+#tab_content > div{
+	display: none;
+}
+#tab_content > div.active{
+	display: block;
+}
+
+#tab_content ul {
+	display: flex;
+	justify-content: space-between;
+}
+#tab_content ul li {
+	list-style: none;
+}
+
+/* TEXT BANNER */
+@keyframes scroll-animation{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -400px; /* 텍스트 width와 동일 */
+  }
+}
+.scroll_text{
+  width: 100%;
+  overflow: hidden;
+}
+.banner_text{
+  position: relative;
+  width: 2800px;
+  animation: scroll-animation 5s linear infinite;
+}
+.banner_text p{
+  float: left;
+  width: 400px;
+  font-size: 36px;
+}
