@@ -76,11 +76,39 @@
 
 /* PRICE */
 .item_title {
-  font-size: 18px;
+  padding-top:20px;
+  font-size: 20px;
+
 }
-.price1 {
-  font-size: 14px;
-  color:#a7a7a7;
+.price {
+  padding-top:10px;
+  position:relative;
+}
+.price span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.price span + span {
+  margin-left:10px;
+}
+.price .price1 {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+.price3 {
+  color:var(--basic-point2-color);
+}
+.price_icon {
+  display: inline-block;
+  width:24px;
+  height:18px;
+  background: url('../images/cart-heart.svg') no-repeat;
+  background-size:18px 18px;
+  position:absolute;
+  right:0;
+  border: none;
 }
 
 /* BEST ITEM */
@@ -124,7 +152,7 @@
 .sale_price {
   font-family: 'Pretendard-Regular light';
   padding: 20px 0 117px;
-    color: #ff3131;
+    color: var(--basic-point2-color);
     font-size: 32px;
     line-height: 33px;
     text-align: center;
@@ -140,6 +168,7 @@
 .text-warning {
   font-size: 30px;
 }
+
 
 
 /* NEW ITEM */
@@ -172,12 +201,12 @@
 	text-decoration:none; 
 	padding:0 20px; 
 	display: block;
-  border: 1px solid #333;
+  border: 1px solid var(--basic-gray-color);
   border-radius: 50px;
 }
 .tab_menu li a.active{
-	color: #fff;
-	background:#333;
+	color: var(--basic-white-color);
+	background:var(--basic-gray-color);
 }
 
 #tab_content {
@@ -220,4 +249,36 @@
   float: left;
   width: 400px;
   font-size: 36px;
+}
+  
+/* EVENT ITEM */
+.eitem_wrapper {
+  display: flex;
+  width: 1200px;
+  overflow-x:scroll;
+  overflow-y:hidden;
+  gap:20px;
+}
+.item_title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.item_title .price3 {
+  font-weight: bold;
+  padding-left:20px;
+}
+.item_ex {
+  color:#777;
+}
+
+/* NEWS */
+.newscontent li {
+  display: flex;
+}
+.newscontent li + li {
+  margin-top:26px;
+}
+.newstitle {
+  font-size: 1.5em;
+  font-weight: bold;
 }

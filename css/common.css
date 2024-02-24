@@ -11,6 +11,7 @@
   --basic-gray-color:#333;
   --basic-white-color:#fff;
   --basic-gray2-color:#e1e1e1;
+  --basic-point2-color:#ff3131;
 }
 
 body {
@@ -30,7 +31,7 @@ body {
 }
 
 .blank {
-  margin:70px 0;
+  margin:100px 0;
 }
 
 h2 {
@@ -38,6 +39,7 @@ h2 {
   font-weight: bold;
   text-align: center;
   margin-bottom:50px;
+  color: var(--basic-gray-color);
 }
 
 .next_button {
