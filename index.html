@@ -4,10 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LAMY</title>
+  <link rel="icon" href="./images/lamyfavicon-16x16.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
+  <div class="popup">
+    <p class="popupt">라미 카트리지 T10 5본입</p>
+    <img src="./images/B002084999-2.jpg" alt="">
+    <p>
+      <label for="check">하루 안보기</label>
+      <input type="checkbox" id="check">
+      <button>X</button>
+    </p>
+  </div>
   <header>
     <div class="top_menu">
       <div class="container d-flex">
@@ -54,12 +64,9 @@
           </li>
           <li><a href="#">어바웃 라미</a>
             <ul class="sub_menu">
-              <li><a href="#">만년필</a></li>
-              <li><a href="#">샤프</a></li>
-              <li><a href="#">볼펜</a></li>
-              <li><a href="#">수성펜</a></li>
-              <li><a href="#">멀티펜</a></li>
-              <li><a href="#">디지털펜</a></li>
+              <li><a href="#">라미 디자인</a></li>
+              <li><a href="#">주요 정보</a></li>
+              <li><a href="#">건축과 예술</a></li>
             </ul>
           </li>
           <li><a href="#">커뮤니티</a>
@@ -75,19 +82,19 @@
       </nav>
     </div>
   </header>
-  <main class="main_wrapper blank">
+  <main class="main_wrapper">
     <div class="mainslide">
       <div class="slidewrapper">
         <ul class="slidecontainer animated">
-          <li class="banner1 slide">1</li>
-          <li class="banner2 slide">2</li>
-          <li class="banner3 slide">3</li>
-          <li class="banner4 slide">4</li>
-          <li class="banner5 slide">5</li>
-          <li class="banner6 slide">6</li>
+          <li class="banner1 slide"><img src="./images/MainBanner1.png" alt=""></li>
+          <li class="banner2 slide"><img src="./images/MainBanner1.png" alt=""></li>
+          <li class="banner3 slide"><img src="./images/MainBanner1.png" alt=""></li>
+          <li class="banner4 slide"><img src="./images/MainBanner1.png" alt=""></li>
+          <li class="banner5 slide"><img src="./images/MainBanner1.png" alt=""></li>
+          <li class="banner6 slide"><img src="./images/MainBanner1.png" alt=""></li>
         </ul>
-        <button class="prev">prev</button>
-        <button class="next">next</button>
+        <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="next"><i class="fa-solid fa-angle-right"></i></button>
       </div>
     </div>
     <section class="best_items_wrapper blank">
@@ -109,7 +116,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="./images/bestImage1.png" alt="">
+              <img src="./images/bestImage2.png" alt="">
               <p class="item_title">노토 볼펜 딥블루</p>
               <p class=" price">
                 <span class="price1">15,900원</span>
@@ -122,7 +129,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="./images/bestImage1.png" alt="">
+              <img src="./images/bestImage3.png" alt="">
               <p class="item_title">노토 볼펜 딥블루</p>
               <p class=" price">
                 <span class="price1">15,900원</span>
@@ -135,7 +142,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="./images/bestImage1.png" alt="">
+              <img src="./images/bestImage4.png" alt="">
               <p class="item_title">노토 볼펜 딥블루</p>
               <p class=" price">
                 <span class="price1">15,900원</span>
@@ -154,9 +161,10 @@
       <div class="container d-flex">
         <div class="countdown">
           <h2 class="sale_title">Time Sale</h2>
+          <p class="sale_title2">HURRY UP!</p>
           <p class="sale_price"><strong>~70%</strong> SALE</p>
           <div class="time_line">
-            <span style="display:70%;"><em></em></span>
+            <span><em></em></span>
           </div>
           <div class="timer_wrapper">
             <span class="card_title mb-4">
@@ -164,7 +172,7 @@
             </span>
             <div class="timer">
               <span id="days" class="value text-warning">00</span>
-              <span class="text-warning">:</span>
+              <span class="text-warning">days</span>
               <span id="hours" class="value text-warning">00</span>
               <span class="text-warning">:</span>
               <span id="minutes" class="value text-warning">00</span>
@@ -189,7 +197,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="./images/saleImage1.png" alt="">
+              <img src="./images/saleImage2.png" alt="">
               <p class="item_title">노토 볼펜 딥블루</p>
               <p class=" price">
                 <span class="price1">15,900원</span>
@@ -220,7 +228,7 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/new1img1.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -233,7 +241,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/new1img2.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -246,7 +254,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/new1img3.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -259,7 +267,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/new1img4.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -276,7 +284,7 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/bestImage2.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -289,7 +297,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/bestImage3.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -302,7 +310,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/bestImage4.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -332,7 +340,7 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/new3img1.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -345,7 +353,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/new3img2.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -358,7 +366,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/new3img3.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -388,7 +396,7 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="./images/bestImage1.png" alt="">
+                  <img src="./images/new4img1.png" alt="">
                   <p class="item_title">노토 볼펜 딥블루</p>
                   <p class=" price">
                     <span class="price1">15,900원</span>
@@ -502,13 +510,13 @@
     </section>
     <div class="scroll_text">
       <div class="banner_text">
-        <p>SCROLL TEXT</p>
-        <p>SCROLL TEXT</p>
-        <p>SCROLL TEXT</p>
-        <p>SCROLL TEXT</p>
-        <p>SCROLL TEXT</p>
-        <p>SCROLL TEXT</p>
-        <p>SCROLL TEXT</p>
+        <p>GIFT SERVICE OPEN</p>
+        <p>GIFT SERVICE OPEN</p>
+        <p>GIFT SERVICE OPEN</p>
+        <p>GIFT SERVICE OPEN</p>
+        <p>GIFT SERVICE OPEN</p>
+        <p>GIFT SERVICE OPEN</p>
+        <p>GIFT SERVICE OPEN</p>
       </div>
     </div>
     <section class="event_item blank">
@@ -524,17 +532,17 @@
           </div>
           <div class="eitem">
             <a href="#">
-              <img src="./images/eventimg.png" alt="event1">
+              <img src="./images/eventimg2.png" alt="event1">
             </a>
-            <p class="item_title">노토 볼펜 딥블루<span class="price3">~72%</span></p>
-            <p class="item_ex">모든 새내기들을 위한 아이템들을 한눈에!</p>
+            <p class="item_title">사랑에 빠진 당신에게 온 세상이 핑크빛♡<span class="price3">~62%</span></p>
+            <p class="item_ex">사랑하는 연인을 위해 기억에 남을 특.별.한 화이트데이를 선물하세요</p>
           </div>
           <div class="eitem">
             <a href="#">
-              <img src="./images/eventimg.png" alt="event1">
+              <img src="./images/eventimg3.png" alt="event1">
             </a>
-            <p class="item_title">노토 볼펜 딥블루<span class="price3">~72%</span></p>
-            <p class="item_ex">모든 새내기들을 위한 아이템들을 한눈에!</p>
+            <p class="item_title">혜택이 와르르르 쏟아진다!<span class="price3">~82%</span></p>
+            <p class="item_ex">오직 라미에서만 볼 수 있는 신상품 구성과 혜택!</p>
           </div>
         </div>
       </div>
@@ -544,17 +552,22 @@
         <h2>NEWS</h2>
         <ul class="newscontent">
           <li>
-            <img src="./images/NewsImg.png" alt="">
+            <img src="./images/NewsImg.png" alt="news1">
             <div>
               <p class="newstitle">`동심·실용성` 다 챙긴 성탄 선물…아동용 만년필 '라미ABC'</p>
               <p>동심을 자극하는 크리스마스가 닷새 앞으로 다가왔다. 크리스마스 이브에 산타클로스가 머리 맡에 어떤 선물을 두고 갈지 궁금해하며 잠들 아이가 주변에 있다면, 낭만적이면서도 실용적인 선물로 아이의 동심을 지켜주는 것은 어떨까.이제 막 글씨를 깨친 아이들, 자신만의 글씨체가 형성되는 중요한 시기에 있는 아이들을 위해 디자인된 어린이용 만년필, 라미ABC를 크리스마스 선물로 제안해 본다.라미ABC는 현직 교사들과 공동연구해 개발된 아동용 만년필이다. 1987년 출시돼 40년가까이 되는 긴 시간동안 독일의 만년필 브랜드인 라미의 스테디셀러 제품 중 하나로 자리매김한 만년필이다.그립 위치 등이 어린이, 초등학생에게 맞게 인체공학적으로 설계된 점이 라미 ABC의 특징이다. 특히 책상에서 잘 굴러가지 않게 디자인됐다. 복잡한 아이들의 책상 위에서 만년필이 굴러떨어져 망가지는 일을 방지하기 위한 것이다.</p>
             </div>
           </li>
           <li>
-            <img src="./images/NewsImg.png" alt="">
+            <img src="./images/NewsImg2.png" alt="news2">
             <div>
-              <p class="newstitle">`동심·실용성` 다 챙긴 성탄 선물…아동용 만년필 '라미ABC'</p>
-              <p>동심을 자극하는 크리스마스가 닷새 앞으로 다가왔다. 크리스마스 이브에 산타클로스가 머리 맡에 어떤 선물을 두고 갈지 궁금해하며 잠들 아이가 주변에 있다면, 낭만적이면서도 실용적인 선물로 아이의 동심을 지켜주는 것은 어떨까.이제 막 글씨를 깨친 아이들, 자신만의 글씨체가 형성되는 중요한 시기에 있는 아이들을 위해 디자인된 어린이용 만년필, 라미ABC를 크리스마스 선물로 제안해 본다.라미ABC는 현직 교사들과 공동연구해 개발된 아동용 만년필이다. 1987년 출시돼 40년가까이 되는 긴 시간동안 독일의 만년필 브랜드인 라미의 스테디셀러 제품 중 하나로 자리매김한 만년필이다.그립 위치 등이 어린이, 초등학생에게 맞게 인체공학적으로 설계된 점이 라미 ABC의 특징이다. 특히 책상에서 잘 굴러가지 않게 디자인됐다. 복잡한 아이들의 책상 위에서 만년필이 굴러떨어져 망가지는 일을 방지하기 위한 것이다.</p>
+              <p class="newstitle">2022 스페셜 에디션 ‘알스타 글로시 레드 만년필’ 출시</p>
+              <p>독일 프리미엄 필기구 브랜드 라미(LAMY)가 2022 스페셜 에디션 ‘알스타 글로시 레드 만년필 세트’를 출시했다. 라미의 베스트셀러인 알스타 만년필에 과감하고 파격적인 컬러 배치를 선보여 시선을 사로잡는 이번 스페셜 에디션은, 한정판 스페셜 노트와 함께 세트 구성으로 만나볼 수 있다.
+              알스타 글로시 레드 만년필은 시그널 레드 컬러 바디에 투명 네온 옐로우 그립과 오렌지색 잉크 피드를 장착, 트렌디하면서도 과감한 컬러 조합으로 일상에 경쾌한 활기를 더해준다.
+              노트에 포함된 스페셜 에디션 노트에 담긴 라미만의 감각적인 디자인 역시 눈길을 끈다. 레드 색상의 소프트 커버 노트에 옐로우 도트 패턴&로고 그래픽을 적용했으며, 내지에 삽입된 컬러 인덱스 등은 펜과 동일한 레드·오렌지·옐로우 컬러를 모티브로 하여 스페셜 에디션만의 특별함을 한껏 더해준다.
+              특히 이번 에디션은 단독 추가 구성으로 스틸 펜촉과 블랙 잉크피드가 장착된 그립 섹션을 추가로 제공하여 더욱 특별하다. 필기시마다 사용하는 잉크 색상에 맞춰 그립부만 간편히 교체하며 사용할 수 있는 구성으로, 감각적인 디자인에 실용성까지 담았다.
+              라미의 알스타(AL-star)는 볼프강 파비안(Wolfgang Fabian)의 디자인으로 완성된 모델로 실용성에 초점을 둔 제품이다. 라미의 시그니처 아이템인 사파리(safari)의 상위 버전으로 사파리에 비해 바디가 넓은 것이 특징이며, 알루미늄 바디를 사용해 가볍고 견고하며 인체공학적인 디자인의 반투명 그립 섹션이 편안한 필기감을 선사해 많은 사랑을 받고 있다.
+              더욱 특별한 구성으로 만나볼 수 있는 2022 스페셜 에디션 알스타 글로시 레드 만년필 세트는 라미 공식 온라인 스토어(lamyshop.kr)에서 단독으로 만나볼 수 있다.</p>
             </div>
           </li>
         </ul>
@@ -565,12 +578,12 @@
         <a href="https://us-shop.lamy.com/highlights"><video id="lamyvideo" src="./images/02_Lamy_Safari_2024_DESKTOP_1920x670.mp4" muted autoplay playsinline></video></a>
       </div>
     </section>
-    <section class="lamystory blank">
+    <section class="lamystory">
       <div class="container">
         <h2>BRAND STORY</h2>
         <ul class="storylist">
           <li class="story story1">
-            <span class="tit">Made in Germany, 라미 디자인</span>
+            <span class="tit">디자인. Made in Germany.</span>
             <span class="con">디자인, 품질, Made in Germany는 라미의 핵심 전략입니다. <br> 생생하게 살아 움직이는 라미의 기업문화가 이를 뒷받침합니다.</span>
             <span class="visual">
               <span class="img1"></span>
@@ -578,16 +591,16 @@
             </span>
           </li>
           <li class="story story2">
-            <span class="tit">Made in Germany, 라미 디자인</span>
-            <span class="con">디자인, 품질, Made in Germany는 라미의 핵심 전략입니다. 생생하게 살아 움직이는 라미의 기업문화가 이를 뒷받침합니다.</span>
+            <span class="tit">라미의 브랜드 가치</span>
+            <span class="con">간결함, 진실함, 균형, 창의성 그리고 명성. <br> 뛰어난 품질, 혁신, 현대적 디자인을 대표하는 신뢰도 높은 글로벌 브랜드</span>
             <span class="visual">
               <span class="img1"></span>
               <span class="img2"></span>
             </span>
           </li>
           <li class="story story3">
-            <span class="tit">Made in Germany, 라미 디자인</span>
-            <span class="con">디자인, 품질, Made in Germany는 라미의 핵심 전략입니다. 생생하게 살아 움직이는 라미의 기업문화가 이를 뒷받침합니다.</span>
+            <span class="tit"> 라미 제품 뒤에 숨겨진 창의적 아이디어</span>
+            <span class="con"> ‘아름다움과 기능성의 공존’이라는 라미의 확고한 디자인 원칙 덕분에 <br> 지속적으로 새로운 프로젝트를 하면서도 고유의 스타일을 유지하고 있습니다.</span>
             <span class="visual">
               <span class="img1"></span>
               <span class="img2"></span>
@@ -597,10 +610,96 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="container">
+      <div class="footertop">
+        <div class="container">
+          <ul>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">주문 내역</a></li>
+            <li><a href="#">고객 문의</a></li>
+            <li><a href="#">라미 소식</a></li>
+            <li><a href="#">대량 구매</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerbottom">
+        <div class="container">
+          <div class="f-logo">
+            <h1><a href="index.html"><img src="./images/logof.png" alt="logo"></a></h1>
+          </div>
+          <div class="f_content">
+            <p>회사명 : 디케이에스에이치코리아 (주) &#124; 대표자 : 박혜성</p>
+            <p>사업자등록번호 : 211-81-54987[사업자정보확인] &#124; 통신판매업신고번호 : 제2015-서울강남-02826</p>
+            <p>주소 : 06653 서울특별시 서초구 효령로 267 (서초동) 명인타워 3층(서초동,명인타워)</p>
+            <p>COPYRIGHT &#x00A9; LAMY ALL RIGHTS RESERVED.</p>
+          </div>
+          <div class="f_count">
+            <ul class="f_sns">
+              <li><a href="#"><img src="./images/icon_sns_instagram.png" alt="instagram"></a></li>
+              <li><a href="#"><img src="./images/icon_sns_facebook.png" alt="facebook"></a></li>
+              <li><a href="#"><img src="./images/icon_sns_youtube.png" alt="youtube"></a></li>
+            </ul>
+            <ul>
+              <li><a href="#">고객센터 바로가기 ></a></li>
+              <li><p>운영시간 오전 10시 ~ 오후 5시 (주말, 공휴일 휴무)</p></li>
+              <li><p>점심시간 오후 12시 ~ 1시 30분</p></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </footer>
   <script src='js/moment.js'></script>
   <script src='js/moment-with-locales.js'></script>
   <script src="js/script.js"></script>
   <script src="js/count.js"></script>
+  <script>
+    const popup = document.querySelector('.popup');
+    const input = popup.querySelector('input');
+    const closeBtn = popup.querySelector('button');
+
+    closeBtn.addEventListener('click',()=>{
+      if(input.checked){
+        //쿠키생성
+        setCookie('Company','ABC',1);
+      }else{
+        //쿠키삭제
+        delCookie('Company');
+      }
+      popup.classList.add('hide');
+    });
+
+    function setCookie(name,val,day){
+      let date = new Date();
+      date.setDate(date.getDate()+day);
+      document.cookie = `${name}=${val};Expires=${date}`;
+    }
+    function delCookie(name){
+      let date = new Date();
+      date.setDate(date.getDate()-1);
+      document.cookie = `${name}='';Expires=${date}`;
+    }
+
+    function checkCookie(name){
+      let cookieArr = document.cookie.split(';');
+      let visited = false;
+
+      for(let cookie of cookieArr){
+        if(cookie.indexOf(name) > -1){
+          visited = true;
+        }
+      }
+      if(visited){
+        popup.classList.add('hide');
+      }else{
+        popup.classList.remove('hide');
+      }
+    }
+    checkCookie('ABC');
+  </script>
 </body>
 </html>
