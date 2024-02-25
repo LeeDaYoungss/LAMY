@@ -412,7 +412,6 @@
     transition: opacity 1.2s, transform 1.2s, -webkit-transform 1.2s;
 }
 
-.story .visual .img2,
 .story:hover .visual .img2 {
     opacity: 1;
     -webkit-transform: translateY(0);
