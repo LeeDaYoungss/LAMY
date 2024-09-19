@@ -269,7 +269,7 @@ font-weight: bold;
 	
 }
 .tab_menu li a{ 
-	color:#999; 
+	color:var(--basic-gray-color);
 	text-transform:uppercase; 
 	font-weight:bold;
 	line-height:35px; 
