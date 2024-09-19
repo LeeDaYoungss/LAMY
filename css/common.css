@@ -5,6 +5,7 @@
   font-family: 'Pretendard-Regular';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-style: normal;
+  
 }
 
 :root {
@@ -18,6 +19,10 @@
   --main-point2-color:#e62a10;
   --main-title-txt:54px;
   --sub-title-txt:40px;
+  --sub-title2-txt:36px;
+  --body-title-txt:30px;
+  --body-txt:24px;
+  --body-txt2:16px;
   --bold:900;
   --light:500;
 }
@@ -32,6 +37,7 @@
 
 body {
   font-family: 'Pretendard-Regular';
+  font-size: var(--body-txt2);
 }
 .d-flex {
   display: flex;

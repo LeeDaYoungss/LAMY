@@ -234,7 +234,7 @@ font-weight: bold;
   height: 4px;
   border: 2px solid var(--basic-point2-color);
   border-radius: 50%;
-  background-color: var(--basic-white-color);
+  background-color: red;
 }
 .timer {
   color:var(--basic-gray-color);
@@ -308,7 +308,7 @@ font-weight: bold;
     left: 0;
   }
   100%{
-    left: -400px; /* 텍스트 width와 동일 */
+    left: -50%; /* 텍스트 width와 동일 */
   }
 }
 .scroll_text{
@@ -327,7 +327,7 @@ font-weight: bold;
   width: 600px;
   font-size: 36px;
   color: var(--main-color);
-  font-weight: bolder;
+  font-weight: var(--bold);
 }
 
 /* EVENT ITEM */
