@@ -191,13 +191,14 @@ input {
   border-bottom: 1px solid var(--basic-gray2-color);
   margin:0 auto;
 }
-.menubar .d-flex {
+nav.menubar > .d-flex {
   justify-content: space-around;
 }
 .menu > li {
   width: 100%;
   float:left;
   position: relative;
+  text-align: center;
 }
 .menu > li > a {
   font-size: 16px;

@@ -36,8 +36,11 @@ z-index: 9;
   margin-top: 30px;
 }
 .popup > p > a {
-  line-height: 30px;
   text-decoration: underline;
+}
+.popup > p > a > img {
+  padding-right: 4px;
+  vertical-align: middle;
 }
 .popup > hr {
   border: 1px solid var(--main-color);
