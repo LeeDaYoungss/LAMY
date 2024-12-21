@@ -27,12 +27,16 @@
   --light:500;
 }
 .main_title {
-  font-size: var(--main-title-txt);
+  font-size: var(--sub-title-txt);
   font-weight: var(--bold);
 }
 .sub_title {
-  font-size: var(--sub-title-txt);
+  font-size: var(--body-txt2);
   font-weight: var(--light);
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 50px;
+  color: #535353;
 }
 
 body {
@@ -60,7 +64,7 @@ h2 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  margin-bottom:50px;
+  margin-bottom:24px;
   color: var(--basic-gray-color);
 }
 
@@ -191,19 +195,20 @@ input {
   justify-content: space-around;
 }
 .menu > li {
+  width: 100%;
   float:left;
   position: relative;
 }
 .menu > li > a {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
-.sub_menu li a {
-  font-size: 18px;
-}
+
 .menu > li > a, 
 .sub_menu li a {
+  width: 100%;
   display: block;
-  line-height: 60px;
+  line-height: 40px;
 }
 .menu > li > a:hover {
   font-weight: 900;
